@@ -29,4 +29,4 @@ content-security-policy: child-src 'self' cdn.pendo.io app.pendo.io;
 
 **Note:**
 The plugin works on 23.10+
-# com.dotcms.pendo
+
