@@ -5,7 +5,7 @@
 
     <groupId>com.dotcms</groupId>
     <artifactId>pendo</artifactId> <!-- Update artifactId to match your AOP project -->
-    <version>24.11</version>
+    <version>25.10.03</version>
     <packaging>bundle</packaging>
 
     <properties>
@@ -26,7 +26,7 @@
         <dependency>
             <groupId>com.dotcms</groupId>
             <artifactId>dotcms-core</artifactId>
-            <version>24.09.25</version>
+            <version>25.10.03-01</version>
             <scope>provided</scope>
         </dependency>
         <dependency>

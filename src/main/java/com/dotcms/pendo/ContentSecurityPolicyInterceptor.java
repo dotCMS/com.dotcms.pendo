@@ -14,13 +14,17 @@ public class ContentSecurityPolicyInterceptor implements WebInterceptor {
 
     static final String[] CSP_HEADERS = new String[] {
 
-            "script-src 'self' 'unsafe-inline' 'unsafe-eval' app.pendo.io *.storage.googleapis.com cdn.pendo.io pendo-static-SUB_ID.storage.googleapis.com data.pendo.io ;",
+            "script-src 'self' 'unsafe-inline' 'unsafe-eval' app.pendo.io *.storage.googleapis.com cdn.pendo.io pendo-static-SUB_ID.storage.googleapis.com data.pendo.io data.experience.dotcms.com content.experience.dotcms.com *.experience.dotcms.com *.experience.dotcms.site;",
             "style-src 'self' 'unsafe-inline' app.pendo.io cdn.pendo.io pendo-static-SUB_ID.storage.googleapis.com;",
-            "img-src 'self' cdn.pendo.io app.pendo.io pendo-static-SUB_ID.storage.googleapis.com data.pendo.io 'self' data:;",
-            "connect-src 'self' app.pendo.io data.pendo.io pendo-static-SUB_ID.storage.googleapis.com;",
+            "connect-src 'self' app.pendo.io data.pendo.io pendo-static-SUB_ID.storage.googleapis.com data.experience.dotcms.com *.experience.dotcms.com *.experience.dotcms.site;",
             "frame-ancestors 'self' cdn.pendo.io app.pendo.io;",
             "frame-src 'self' cdn.pendo.io app.pendo.io;",
-            "child-src 'self' cdn.pendo.io app.pendo.io;"
+            "child-src 'self' cdn.pendo.io app.pendo.io;",
+            "img-src 'self' data: blob:"
+                    + " app.pendo.io cdn.pendo.io pendo-static-6272865290747904.storage.googleapis.com "
+                    + " *.storage.googleapis.com data.pendo.io data.experience.dotcms.com content.experience.dotcms.com *.experience.dotcms.com *.experience.dotcms.site "
+                    + " www.gravatar.com *.gravatar.com "
+                    + " dotcms.com *.dotcms.com;"
 
     };
 
